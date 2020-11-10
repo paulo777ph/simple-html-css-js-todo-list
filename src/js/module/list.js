@@ -27,7 +27,7 @@ var ListModule = (function () {
 
   function createInputText(text) {
     var inputText = document.createElement("input");
-    inputText.className = "input-text";
+    inputText.className = "input-form list-input";
     inputText.type = "text";
     inputText.value = text;
 

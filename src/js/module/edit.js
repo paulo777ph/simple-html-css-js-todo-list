@@ -2,7 +2,7 @@ var EditModule = (function () {
   function createEditButton() {
     var editButton = document.createElement("button");
     editButton.innerHTML = "Edit";
-    editButton.className = "edit-button";
+    editButton.className = "edit-button list-button";
 
     editButton.addEventListener("click", function (event) {
       var list = this.parentElement;

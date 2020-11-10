@@ -10,7 +10,7 @@
     <title>Simple Todo List</title>
     <meta name="description" content="A simple todo list web application" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -20,16 +20,17 @@
       </p>
     <![endif]-->
     <h1>Todo List</h1>
-    <div>
-      <div>
-        <input
-          id="add-entry"
-          type="text"
-          placeholder="Input the text you wish to add"
-        /><button id="add-button" type="button">Add</button>
-      </div>
-      <div id="todo-list-container"></div>
+
+    <div id="add-container">
+      <input
+        class="input-form"
+        type="text"
+        placeholder="Input the text you wish to add"
+      />
+      <button class="add-button" type="button">Add</button>
     </div>
+    <div id="todo-list-container"></div>
+
     <script src="./src/js/module/edit.js" async defer></script>
     <script src="./src/js/module/delete.js" async defer></script>
     <script src="./src/js/module/add.js" async defer></script>
